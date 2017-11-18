@@ -1,0 +1,13 @@
+/**
+ * 8-way Or: 
+ * out = (in[0] or in[1] or ... or in[15])
+ */
+
+CHIP IsNeg16 {
+    IN in[16];
+    OUT out;
+
+    PARTS:
+    // Put your code here:
+    And(a= in[15], b= in[15], out= out);
+}
